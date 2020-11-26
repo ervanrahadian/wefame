@@ -23,7 +23,9 @@ function Home() {
             </Grid.Column>
           )}
           {loading ? (
-            <Loader />
+            <Loader active inline="centered">
+              Memuat...
+            </Loader>
           ) : (
             <Transition.Group duration={1000}>
               {posts &&
